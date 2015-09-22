@@ -22,7 +22,7 @@ main(int argc, char *argv[])
     if (ps == NULL)
         return 1;
 
-    fh = fopen("goforward.raw", "rb");
+    fh = fopen(argv[1], "rb");
     if (fh == NULL)
         return -1;
         rv = ps_start_utt(ps);
