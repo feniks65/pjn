@@ -1,5 +1,10 @@
 NEW
 
+Compilation line:
+
 gcc -o ps a.c \
     -DMODELDIR=\"`pkg-config --variable=modeldir pocketsphinx`\" \
     `pkg-config --cflags --libs pocketsphinx sphinxbase`
+
+Cmd to record sounds from microphone:
+sox -t alsa default output.wav
